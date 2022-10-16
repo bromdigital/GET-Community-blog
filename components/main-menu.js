@@ -1,10 +1,6 @@
 import * as React from 'react';
-import Button from '@mui/material/Button';
 import NextLink from 'next/link';
-import Image from 'next/image'
-import Link from '@mui/material/Link';
 import Stack from '@mui/material/Stack';
-import { withTheme } from '@emotion/react';
 
 export default function MainMenu() {
 
@@ -15,15 +11,13 @@ export default function MainMenu() {
               href="/"
               passHref
         >
-        <Image
+        <img 
           src="/static/images/logo.svg"
           alt="GET Community Blog"
           width={250}
           height={80}
         />
       </NextLink>
-      <Link href="#" underline="none">
-      </Link>
       </Stack>
     </div>
   );

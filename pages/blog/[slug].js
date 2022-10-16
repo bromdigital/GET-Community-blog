@@ -1,16 +1,14 @@
+import * as React from 'react';
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
-import { marked } from 'marked'
-import Link from 'next/link'
-import Image from 'next/image'
+import marked from 'marked'
 import Head from 'next/head'
 
 import {
   Button,
   Divider,
-  Container,
-  Typography
+  Container
 } from '@mui/material';
 
 export default function PostPage({
@@ -23,25 +21,22 @@ export default function PostPage({
       <Head>
         <title>{title} - GET Community</title>
       </Head>
-
-      <Typography
-          variant='h6'>
-        {`${title} - ${postedBy}`}
-      </Typography>
+      <h2>{`${title} - ${postedBy}`}</h2>
       <Divider />
       <Button
         size="large"
         href="/"
-        sx={{margin: 3}}
+        sx={{margin: 1}}
       >HOME
       </Button>
       <Button
         size="large"
         href={originalUrl}
         sx={{
-          margin: 3,
+          margin: 1,
           float: 'right'
         }}
+        target="_blank"
       >{`${postedBy}'s original article`}
       </Button>
       <Divider />
