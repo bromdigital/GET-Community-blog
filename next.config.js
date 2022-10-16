@@ -1,10 +1,6 @@
 module.exports = {
-  exportPathMap: async function (
-    defaultPathMap,
-    { dev, dir, outDir, distDir, buildId }
-  ) {
-    return {
-      '/': { page: '/' }
-    }
-  },reactStrictMode: true,
+  reactStrictMode: true,
+  // Webpack 5 is enabled by default
+  // You can still use webpack 4 while upgrading to the latest version of Next.js by adding the "webpack5: false" flag
+  webpack5: false,
 }
