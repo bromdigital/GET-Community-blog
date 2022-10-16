@@ -1,18 +1,14 @@
-# Next Markdown Blog
-
-Simple static blog using markdown and Next.js
-
-[DEMO](https://next-markdown-blog-drab.vercel.app/)
+[VIEW SITE](https://get-community-blog-simonbromfield.vercel.app/)
 
 ## Usage
 
-```bash
-# Install dependencies
-npm install
+Using markdown file to upload blogs posts relevant around GET-Protocol. 
 
-# Run dev server
-npm run dev
+## .md file example, this section required
 
-# Build for prod and export static website
-npm run build
-```
+    title: 'NFTs are much more than just jpegs'
+    postedBy: 'Adnan'
+    excerpt: 'NFTs are much more than just jpegs. A deep dive into NFT ticketing with GET Protocol.'
+    originalUrl: 'https://medium.com/coinmonks/nfts-are-much-more-than-just-jpegs-99c20cd963fd'
+
+All blog posts to be added into the /posts/ directory where these will be displayed and generated into the next.js site.
