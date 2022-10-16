@@ -68,37 +68,21 @@ Assessing the tokenomics of GET protocol below, we noticed the following specifi
 
 **Value**
 
-Price (at time of writing)
+Price (at time of writing): $2.10
 
-$2.10
+Initial Total Supply : 33.368.773 GET (33 million GET)
 
-Initial Total Supply
+Burned Tokens : 10.000.000 GET (29.96% of supply)
 
-33.368.773 GET (33 million GET)
+**New Total Supply : 23.368.811 GET**
 
-– Burned Tokens
+DAO Treasury : 2.6000.000 GET
 
-10.000.000 GET (29.96% of supply)
+User Growth Fund : 4.859.796 GET
 
-**New Total Supply**
+**= Circulating Supply : 15.909.015 GET**
 
-**23.368.811 GET**
-
-– DAO Treasury
-
-2.6000.000 GET
-
-– User Growth Fund
-
-4.859.796 GET
-
-**= Circulating Supply**
-
-**15.909.015 GET**
-
-Market Capitalization
-
-$48.840.815 ($49 million)
+Market Capitalization : $48.840.815 ($49 million)
 
 **4. FUNDAMENTAL ANALYSIS**
 
@@ -109,6 +93,7 @@ As discussed above, the number one element of growth for GET protocol is the num
 -   Nov 2021: 122.246 tickets sold
 
 ![](https://eurykleiainvestments.com/wp-content/uploads/2022/02/End_Of_Year_Progress_EOY_2_0064b0574b-300x166.png)
+
 Given the fact that we are currently coming out of a global pandemic, causing the delay and closure of many festivals, concerts, musicals and other ticket locations, the increasingly number of tickets sold is insanely impressive. Besides the growing number of tickets sold, the team in 2021 has furthermore burned 10 million GET, switched their ticket infrastructure towards Polygon, have developed the Ticket Explorer, updated the website, released the digital twin, released on-chain tokeonomics, released the NFT claim function and signed up many new partners and ticketing companies. Just briefly mentioning these milestones feels like selling short of the team and I therefore urge the reader to read up on the  [**GET protocol 2021 wrap-up**](https://www.get-protocol.io/content/the-get-protocol-2021-wrap-up)  on their blog.
 
 Looking ahead at the year 2022, GET protocol has mentioned interesting ideas and goals in their  [**2022 Roadmap blog**](https://www.get-protocol.io/content/get-protocol's-2022-roadmap). I have listed the upcoming developments in order of importance as per my opinion:
@@ -125,6 +110,7 @@ Looking ahead at the year 2022, GET protocol has mentioned interesting ideas and
 -   **Branded Marketplaces**: Having a custom marketplace allows for greater control of the user experience and journeys, which becomes crucial for facilitating secondary market on-chain transfers. There are many practical (and sometimes legal) reasons that the event organisers need to collect some information about the attendee and collecting that information prior to an on-chain transfer will be crucial to ensure the Event Organiser experience is the best it can be. Allowing this to be a branded allows for a continuation of the white-label package from only being a ticketing platform to also covering the entire NFT lifecycle.
 
 ![](https://eurykleiainvestments.com/wp-content/uploads/2022/02/Overview_Image_3ae449c970-300x169.png)
+
 In short, GET protocol will focus on increasing the value of their issued NFT’s by adding various use cases and further growing the protocol into maturity. Consequently, increasing the value of the issued NFT’s and growing the protocol would furthermore lead to the increased use case and value of the GET protocol token. Although the goals of the team seem highly ambitious, it should be noted that the team of GET protocol have rolled out many new developments in the past couple of years and have worked on their ticketing solution since 2017, while many crypto projects have rug pulled on their investors or have thrown in the towel.
 
 Furthermore, as the developments of the team increases, so does the use case and value of the GET protocol token. Currently, the protocol has the following use cases:

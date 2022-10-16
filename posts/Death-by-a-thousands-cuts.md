@@ -4,11 +4,6 @@ postedBy: 'Kasper'
 excerpt: 'Death by a thousands cuts: Using Moneyball thinking to strike out Ticketmaster'
 originalUrl: 'https://medium.com/get-protocol/death-by-a-thousands-cuts-using-moneyball-thinking-to-strike-out-ticketmaster-31c161f84f1c'
 ---
-[](https://www.youtube.com/watch?v=-4QPVo0UIzc)
-
-![](https://miro.medium.com/max/1400/1*K6So0MmvY0e0tKxMjzfKSg.png)
-
-Moneyball (2011)
 
 # Death by a thousands cuts: Using Moneyball thinking to strike out Ticketmaster
 
