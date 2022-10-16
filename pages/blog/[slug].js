@@ -41,7 +41,8 @@ export default function PostPage({
       </Button>
       <Divider />
       <Container>
-        <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
+        <div dangerouslySetInnerHTML={{ __html: marked(content) }}
+          id="blogContent"></div>
       </Container>
     </>
   )
