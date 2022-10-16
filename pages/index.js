@@ -5,6 +5,8 @@ import Head from 'next/head'
 import Post from '../components/Post'
 import Grid from '@mui/material/Grid';
 import { sortByDate } from '../utils'
+import { Container } from '@mui/system'
+import Resources from '../components/Resources'
 
 export default function Home({ posts }) {
   return (
@@ -12,6 +14,10 @@ export default function Home({ posts }) {
       <Head>
         <title>GET Community Blog</title>
       </Head>
+      <Container id="resources" maxWidth={false}>
+        <h3>Resources</h3>
+        <Resources />
+      </Container>
       <Grid container spacing={2}>
         {posts.map((post, index) => (
           <Post key={index} post={post} />

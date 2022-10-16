@@ -15,7 +15,6 @@ header {
   background: #15083F;
   color: #fff;
   padding: 25px;
-  margin-bottom: 40px;
   border-bottom: 5px solid #77B094;
   position: -webkit-sticky;
   position: sticky;
@@ -60,3 +59,8 @@ img{
   font-weight: 600;
 }
 
+#resources{
+  width: 100%;
+  padding: 10px;
+  margin: 14px;
+}
