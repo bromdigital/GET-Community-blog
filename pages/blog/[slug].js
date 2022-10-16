@@ -3,6 +3,8 @@ import path from 'path'
 import matter from 'gray-matter'
 import marked from 'marked'
 import Link from 'next/link'
+import Head from 'next/head'
+
 import {
   Button,
   Divider,
@@ -16,6 +18,9 @@ export default function PostPage({
 }) {
   return (
     <>
+      <Head>
+        <title>{title} - GET Community</title>
+      </Head>
       <Button
         size="small"
         href="/"
