@@ -14,7 +14,7 @@ import {
 } from '@mui/material';
 
 export default function PostPage({
-  frontmatter: { title, date, cover_image },
+  frontmatter: { title, originalUrl, postedBy },
   slug,
   content,
 }) {
@@ -24,23 +24,26 @@ export default function PostPage({
         <title>{title} - GET Community</title>
       </Head>
       <Button
-        size="small"
+        size="large"
         href="/"
-      >Go Back
+        sx={{margin: 3}}
+      >HOME
+      </Button>
+      <Button
+        size="large"
+        href={originalUrl}
+        sx={{
+          margin: 3,
+          float: 'right'
+        }}
+      >{`${postedBy}'s original article`}
       </Button>
       <Divider />
-      <Container maxWidth={false}>
+      <Container>
         <Typography
           variant='h2'>
           {title}
         </Typography>
-        <Image
-          src={cover_image}
-          alt="GET Community Blog"
-          width={1}
-          height={20}
-        />
-      
         <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
 
       </Container>
