@@ -14,13 +14,8 @@ export default function Post({ post }) {
       lg={4}
     >
     <Card>
-      <CardMedia
-        component="img"
-        height="140"
-        image={post.frontmatter.cover_image}
-        alt={post.frontmatter.title}
-      />
-      <CardContent>
+        <CardContent
+        sx={{borderTop: "5px solid #77B094"}}>
         <Typography gutterBottom variant="h5" component="div">
           {post.frontmatter.title}
         </Typography>

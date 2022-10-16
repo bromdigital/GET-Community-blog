@@ -23,7 +23,6 @@ export default function MainMenu() {
         />
       </NextLink>
       <Link href="#" underline="none">
-        Resources
       </Link>
       </Stack>
     </div>
