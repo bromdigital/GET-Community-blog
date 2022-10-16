@@ -26,9 +26,12 @@ footer {
   border-top: 5px solid #77B094;
 }
 
-
-
 .logo{
   width: 200px;
 }
 
+img{
+  width:100%;
+  max-width:600px;
+  margin: 10px auto;
+}

@@ -1,7 +1,7 @@
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
-import marked from 'marked'
+import { marked } from 'marked'
 import Link from 'next/link'
 import Image from 'next/image'
 import Head from 'next/head'
@@ -23,6 +23,12 @@ export default function PostPage({
       <Head>
         <title>{title} - GET Community</title>
       </Head>
+
+      <Typography
+          variant='h6'>
+        {`${title} - ${postedBy}`}
+      </Typography>
+      <Divider />
       <Button
         size="large"
         href="/"
@@ -40,12 +46,7 @@ export default function PostPage({
       </Button>
       <Divider />
       <Container>
-        <Typography
-          variant='h2'>
-          {title}
-        </Typography>
         <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
-
       </Container>
     </>
   )
