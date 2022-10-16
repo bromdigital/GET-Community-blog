@@ -1,18 +1,20 @@
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
-import marked from 'marked'
+import { marked } from 'marked'
 import Link from 'next/link'
+import Image from 'next/image'
 import Head from 'next/head'
 
 import {
   Button,
   Divider,
-  Container
+  Container,
+  Typography
 } from '@mui/material';
 
 export default function PostPage({
-  frontmatter: { title, date, cover_image },
+  frontmatter: { title, originalUrl, postedBy },
   slug,
   content,
 }) {
@@ -21,19 +23,30 @@ export default function PostPage({
       <Head>
         <title>{title} - GET Community</title>
       </Head>
+
+      <Typography
+          variant='h6'>
+        {`${title} - ${postedBy}`}
+      </Typography>
+      <Divider />
       <Button
-        size="small"
+        size="large"
         href="/"
-      >Go Back
+        sx={{margin: 3}}
+      >HOME
+      </Button>
+      <Button
+        size="large"
+        href={originalUrl}
+        sx={{
+          margin: 3,
+          float: 'right'
+        }}
+      >{`${postedBy}'s original article`}
       </Button>
       <Divider />
       <Container>
-        <h1 className='post-title'>{title}</h1>
-        <div className='post-date'>Posted on {date}</div>
-        <img src={cover_image} alt='' />
-      
         <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
-
       </Container>
     </>
   )

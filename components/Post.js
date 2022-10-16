@@ -2,10 +2,11 @@ import * as React from 'react';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { Grid } from '@mui/material'
+
+
 export default function Post({ post }) {
   return (
     <Grid item
@@ -14,13 +15,8 @@ export default function Post({ post }) {
       lg={4}
     >
     <Card>
-      <CardMedia
-        component="img"
-        height="140"
-        image={post.frontmatter.cover_image}
-        alt={post.frontmatter.title}
-      />
-      <CardContent>
+        <CardContent
+        sx={{borderTop: "5px solid #77B094"}}>
         <Typography gutterBottom variant="h5" component="div">
           {post.frontmatter.title}
         </Typography>
