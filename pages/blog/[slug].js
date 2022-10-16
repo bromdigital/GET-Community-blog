@@ -3,12 +3,14 @@ import path from 'path'
 import matter from 'gray-matter'
 import marked from 'marked'
 import Link from 'next/link'
+import Image from 'next/image'
 import Head from 'next/head'
 
 import {
   Button,
   Divider,
-  Container
+  Container,
+  Typography
 } from '@mui/material';
 
 export default function PostPage({
@@ -27,10 +29,17 @@ export default function PostPage({
       >Go Back
       </Button>
       <Divider />
-      <Container>
-        <h1 className='post-title'>{title}</h1>
-        <div className='post-date'>Posted on {date}</div>
-        <img src={cover_image} alt='' />
+      <Container maxWidth={false}>
+        <Typography
+          variant='h2'>
+          {title}
+        </Typography>
+        <Image
+          src={cover_image}
+          alt="GET Community Blog"
+          width={1}
+          height={20}
+        />
       
         <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
 

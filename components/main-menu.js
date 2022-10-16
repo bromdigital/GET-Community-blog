@@ -4,8 +4,9 @@ import NextLink from 'next/link';
 import Image from 'next/image'
 import Link from '@mui/material/Link';
 import Stack from '@mui/material/Stack';
+import { withTheme } from '@emotion/react';
 
-export default function BasicMenu() {
+export default function MainMenu() {
 
   return (
     <div>
@@ -17,12 +18,12 @@ export default function BasicMenu() {
         <Image
           src="/static/images/logo.svg"
           alt="GET Community Blog"
-          width={300}
-          height={100}
+          width={250}
+          height={80}
         />
       </NextLink>
       <Link href="#" underline="none">
-        {''}
+        Resources
       </Link>
       </Stack>
     </div>
