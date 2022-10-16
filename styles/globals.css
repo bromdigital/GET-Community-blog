@@ -8,6 +8,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  min-width: 100%;
 }
 
 header {
@@ -26,12 +27,32 @@ footer {
   border-top: 5px solid #77B094;
 }
 
-.logo{
-  width: 200px;
-}
-
 img{
   width:100%;
   max-width:600px;
   margin: 10px auto;
 }
+
+#blogContent{
+  width:100%;
+  word-wrap: break-word;
+  color: #424242;
+  line-height: 1.8;
+  font-size: 1em;
+  margin-top: 3em;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+#blogContent img {
+  padding: 20px;
+}
+#blogContent p {
+  padding-bottom: 2em;
+}
+#blogContent a {
+  text-decoration: none;
+  color: #77B094;
+  font-weight: 600;
+}
+
