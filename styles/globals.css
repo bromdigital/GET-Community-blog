@@ -14,7 +14,7 @@ body {
 header {
   background: #15083F;
   color: #fff;
-  padding: 25px;
+  padding: 0px;
   border-bottom: 5px solid #77B094;
   position: -webkit-sticky;
   position: sticky;
