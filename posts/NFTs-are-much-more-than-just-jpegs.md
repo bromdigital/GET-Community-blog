@@ -1,4 +1,5 @@
 ---
+type: 'blog'
 title: 'NFTs are much more than just jpegs'
 postedBy: 'Adnan'
 excerpt: 'NFTs are much more than just jpegs. A deep dive into NFT ticketing with GET Protocol.'

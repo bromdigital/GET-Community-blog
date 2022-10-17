@@ -3,16 +3,29 @@ import path from 'path'
 import matter from 'gray-matter'
 import Head from 'next/head'
 import Post from '../components/Post'
+import Tweet from '../components/TweetThread'
 import Grid from '@mui/material/Grid';
 import { sortByDate } from '../utils'
 import { Container } from '@mui/system'
 import Resources from '../components/Resources'
 
 export default function Home({ posts }) {
+  
+  function postTypeSwitch(post, index) {
+    switch(post.frontmatter.type) {
+      case 'blog':
+        return <Post key={index} post={post} />;
+      case 'twitter':
+        return <Tweet key={index} post={post} />;
+      default:
+        return <h2 key={index}>not blog</h2>;
+    }
+  }
+
   return (
     <div>
       <Head>
-        <title>GET Community Blog</title>
+        <title>GET Community Blog & Resources</title>
       </Head>
       <Container id="resources" maxWidth={false}>
         <h3>Resources</h3>
@@ -20,7 +33,7 @@ export default function Home({ posts }) {
       </Container>
       <Grid container spacing={2}>
         {posts.map((post, index) => (
-          <Post key={index} post={post} />
+          postTypeSwitch(post, index)
         ))}
       </Grid>
     </div>

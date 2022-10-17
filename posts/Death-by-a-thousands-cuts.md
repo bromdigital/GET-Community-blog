@@ -1,4 +1,5 @@
 ---
+type: 'blog'
 title: 'Death by a thousands cuts'
 postedBy: 'Kasper'
 excerpt: 'Death by a thousands cuts: Using Moneyball thinking to strike out Ticketmaster'
