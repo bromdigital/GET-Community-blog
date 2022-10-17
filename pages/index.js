@@ -5,7 +5,7 @@ import Head from 'next/head'
 import Post from '../components/Post'
 import Tweet from '../components/TweetThread'
 import Grid from '@mui/material/Grid';
-import { sortByDate } from '../utils'
+import { shuffleArray } from '../utils'
 import { Container } from '@mui/system'
 import Resources from '../components/Resources'
 
@@ -65,7 +65,7 @@ export async function getStaticProps() {
 
   return {
     props: {
-      posts: posts.sort(sortByDate),
+      posts: shuffleArray(posts),
     },
   }
 }
