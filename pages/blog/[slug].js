@@ -2,7 +2,7 @@ import * as React from 'react';
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
-import marked from 'marked'
+import * as marked from "marked";
 import Head from 'next/head'
 
 import {
@@ -41,7 +41,7 @@ export default function PostPage({
       </Button>
       <Divider />
       <Container>
-        <div dangerouslySetInnerHTML={{ __html: marked(content) }}
+        <div dangerouslySetInnerHTML={{ __html: marked.parse(content) }}
           id="blogContent"></div>
       </Container>
     </>
