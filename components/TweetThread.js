@@ -13,11 +13,10 @@ export default function TwitterThread({ post }) {
       sm={6}
       lg={4}
     >
-    <Card>
-        <CardContent
-        sx={{borderTop: "5px solid blue"}}>
+    <Card sx={{border: "5px solid #4A99E9"}}>
+        <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-            {`Twitter Thread - ${post.frontmatter.title}`}
+            {`Tweet - ${post.frontmatter.title}`}
         </Typography>
       </CardContent>
       <CardActions>
