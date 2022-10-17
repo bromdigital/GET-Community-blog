@@ -2,6 +2,7 @@
 type: 'blog'
 title: 'Death by a thousands cuts'
 postedBy: 'Kasper'
+featureImage: 'https://miro.medium.com/max/1400/1*PBTkc1zZ6m3Aj4Sxb4c7Vg.gif'
 excerpt: 'Death by a thousands cuts: Using Moneyball thinking to strike out Ticketmaster'
 originalUrl: 'https://medium.com/get-protocol/death-by-a-thousands-cuts-using-moneyball-thinking-to-strike-out-ticketmaster-31c161f84f1c'
 ---
