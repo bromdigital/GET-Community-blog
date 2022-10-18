@@ -1,4 +1,4 @@
-[VIEW SITE](https://get-community-blog-simonbromfield.vercel.app/)
+[https://www.get-community.com/](https://www.get-community.com/)
 
 ## Usage
 
