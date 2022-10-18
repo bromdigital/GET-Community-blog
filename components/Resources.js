@@ -26,7 +26,7 @@ export default function DirectionStack() {
     },
     {
       href: 'https://explorer.get-protocol.io/',
-      title: 'NFT Ticket Explorer'
+      title: 'Ticket Explorer'
     },
     {
       href: 'https://thegraph.com/hosted-service/subgraph/getprotocol/get-protocol-subgraph',
