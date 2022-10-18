@@ -77,7 +77,7 @@ export default function DirectionStack() {
         variant="h7"
         sx={resourcesStyle}
         >
-        Resources    
+        Dig deeper into $GET    
       </Typography>
       </Container> 
       <Grid container
