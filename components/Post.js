@@ -1,8 +1,6 @@
 import * as React from 'react';
 import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
-import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import {
   Grid,
@@ -15,13 +13,20 @@ export default function Post({ post }) {
   return (
     <Grid item
       xs={12}
-      sm={6}
-      lg={4}
+      sm={12}
+      md={4}
+      lg={3}
     >
-      <Card>
+      <Card
+        sx={{
+          height: "100%"
+        }}>
         <CardActionArea
           LinkComponent="a"
           href={`/blog/${post.slug}`}
+          sx={{
+            height: "100%"
+          }}
         >
         <CardMedia
           component="img"

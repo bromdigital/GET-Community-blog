@@ -17,11 +17,11 @@ export default function TwitterThread({ post }) {
     >
       <Card
         sx={{
-          backgroundColor: "#4A99E9",
+          backgroundColor: "#E94E1B",
           height: "100%"
         }}>
       <CardActionArea
-            LinkComponent="a"
+          LinkComponent="a"
           href={post.frontmatter.url}
           target="_blank"
           sx={{
@@ -33,7 +33,7 @@ export default function TwitterThread({ post }) {
               color: "#FFF",
               fontWeight: "bold"
             }}>
-              Twitter Thread
+              Press
             </Typography>
             <Typography gutterBottom variant="h6" component="div"
             sx={{
