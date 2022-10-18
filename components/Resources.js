@@ -1,8 +1,10 @@
 import * as React from 'react';
 import {
   Button,
-  Grid
+  Grid,
+  Typography
 } from '@mui/material';
+import { Container } from '@mui/system';
 
 export default function DirectionStack() {
   const resources = [
@@ -56,10 +58,30 @@ export default function DirectionStack() {
     backgroundColor: "#77B094",
     padding: 1
   }
+  const resourcesStyle = {
+    backgroundColor: "#77B094",
+    color: "white",
+    padding: 1
+  }
+  const headerBg = {
+    backgroundColor: "#77B094",
+    width: "100%"
+  }
+
   return (
     <div>
+      <Container
+        sx={headerBg}
+        maxWidth={false}>
+      <Typography gutterBottom
+        variant="h7"
+        sx={resourcesStyle}
+        >
+        Resources    
+      </Typography>
+      </Container> 
       <Grid container
-      sx={gridStyle}>
+        sx={gridStyle}>
         {resources.map((item) => (
           <Grid item
             key={item.href}
