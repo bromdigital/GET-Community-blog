@@ -1,8 +1,7 @@
 import * as React from 'react';
 import {
   Button,
-  Divider,
-  Stack
+  Grid
 } from '@mui/material';
 
 export default function DirectionStack() {
@@ -41,30 +40,41 @@ export default function DirectionStack() {
     },
     {
       href: 'https://dashboard.get-community.com/',
-      title: 'Community Dashboard'
+      title: 'Dashboard'
     }
   ];
   const btnStyle = {
-    margin: 1,
-    backgroundColor: "#77B094",
     color: "white",
-    '&:hover': {
-      backgroundColor: '#15083F',
-      borderColor: '#15083F',
-      boxShadow: 'none',
-    },
+    width: "100%",
+  }
+  const gridStyle = {
+    textAlign: "center",
+    backgroundColor: "#77B094",
+    padding: 1
   }
   return (
     <div>
-      {resources.map((item) => (
+      <Grid container
+      sx={gridStyle}>
+        {resources.map((item) => (
+          <Grid item
+            key={item.href}
+            sm={4}
+            lg={2}
+            sx={gridStyle}
+          >
           <Button
             key={item.href}
             size="large"
             href={item.href}
             target="_blank"
             sx={btnStyle}
-          >{item.title}</Button>
-          ))}
+            variant="outlined"
+            color="success"
+            >{item.title}</Button>
+          </Grid>
+      ))}
+      </Grid>
     </div>
   );
 }

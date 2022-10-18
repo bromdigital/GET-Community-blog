@@ -7,7 +7,6 @@ import Tweet from '../components/TweetThread'
 import Grid from '@mui/material/Grid';
 import { shuffleArray } from '../utils'
 import { Container } from '@mui/system'
-import Resources from '../components/Resources'
 
 export default function Home({ posts }) {
   
@@ -28,8 +27,6 @@ export default function Home({ posts }) {
         <title>GET Community Blog & Resources</title>
       </Head>
       <Container id="resources" maxWidth={false}>
-        <h3>Resources</h3>
-        <Resources />
       </Container>
       <Grid container spacing={2}>
         {posts.map((post, index) => (
