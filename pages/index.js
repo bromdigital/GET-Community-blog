@@ -4,6 +4,7 @@ import matter from 'gray-matter'
 import Head from 'next/head'
 import Post from '../components/Post'
 import Tweet from '../components/TweetThread'
+import Press from '../components/Press'
 import Grid from '@mui/material/Grid';
 import { shuffleArray } from '../utils'
 import { Container } from '@mui/system'
@@ -16,8 +17,10 @@ export default function Home({ posts }) {
         return <Post key={index} post={post} />;
       case 'twitter':
         return <Tweet key={index} post={post} />;
+      case 'press':
+          return <Press key={index} post={post} />;
       default:
-        return <h2 key={index}>not blog</h2>;
+        return <h2 key={index}>ERROR</h2>;
     }
   }
 
