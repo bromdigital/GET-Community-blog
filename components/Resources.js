@@ -39,6 +39,10 @@ export default function DirectionStack() {
       title: 'Twitter Bot'
     },
     {
+      href: 'https://docs.get-protocol.io/',
+      title: 'Dev Docs'
+    },
+    {
       href: 'https://dashboard.get-community.com/',
       title: 'Dashboard'
     }
