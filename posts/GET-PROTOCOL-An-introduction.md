@@ -2,6 +2,7 @@
 type: 'blog'
 title: 'GET PROTOCOL | An introduction'
 postedBy: 'WildernessEnding'
+featureImage: 'https://d10vd7ozbbh4dp.cloudfront.net/Ticket_9b6bd332cf.svg'
 excerpt: 'GET protocol is an NFT ticketing protocol built on the Ethereum network, operating across the polygon network in order to scale.'
 originalUrl: 'https://www.publish0x.com/get-protocol-an-introduction/get-protocol-an-introduction-xooxglq'
 ---

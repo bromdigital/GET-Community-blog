@@ -4,7 +4,11 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import { Grid } from '@mui/material'
+import {
+  Grid,
+  CardActionArea,
+  CardMedia
+} from '@mui/material'
 
 
 export default function Post({ post }) {
@@ -14,23 +18,26 @@ export default function Post({ post }) {
       sm={6}
       lg={4}
     >
-    <Card>
-        <CardContent
-        sx={{borderTop: "5px solid #77B094"}}>
-        <Typography gutterBottom variant="h5" component="div">
-          {post.frontmatter.title}
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
+      <Card>
+        <CardActionArea
+          LinkComponent="a"
+          href={`/blog/${post.slug}`}
+        >
+        <CardMedia
+          component="img"
+          height="140"
+          image={post.frontmatter.featureImage}
+          alt={post.frontmatter.title}
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="div">
+            {post.frontmatter.title}
+          </Typography>
+          <Typography variant="body2" color="text.secondary">
           {post.frontmatter.excerpt}
-        </Typography>
-      </CardContent>
-      <CardActions>
-          <Button
-            size="small"
-            href={`/blog/${post.slug}`}
-          >Read More</Button>
-        
-      </CardActions>
+          </Typography>
+        </CardContent>
+      </CardActionArea>
     </Card>
     </Grid>
   );

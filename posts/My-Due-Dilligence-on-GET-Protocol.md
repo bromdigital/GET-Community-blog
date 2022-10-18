@@ -2,6 +2,7 @@
 type: 'blog'
 title: 'My Due Dilligence on GET Protocol'
 postedBy: 'Eurykleia Investments'
+featureImage: 'https://eurykleiainvestments.com/wp-content/uploads/2022/02/End_Of_Year_Progress_EOY_2_0064b0574b-300x166.png'
 excerpt: 'Ever since I read the book ‘One up on Wallstreet‘ by legendary investor Peter Lynch, I have taken the Lynch approach in investing which basically comes down to the following'
 originalUrl: 'https://eurykleiainvestments.com/blog/get-protocol/'
 ---
