@@ -8,6 +8,8 @@ import Press from '../components/Press'
 import Grid from '@mui/material/Grid';
 import { shuffleArray } from '../utils'
 import { Container } from '@mui/system'
+import Resources from '../components/Resources'
+import BlogSelector from '../components/BlogSelector'
 
 export default function Home({ posts }) {
   
@@ -29,13 +31,16 @@ export default function Home({ posts }) {
       <Head>
         <title>GET Community Blog & Resources</title>
       </Head>
+
+      <BlogSelector />
+      <Resources />
       <Container id="resources" maxWidth={false}>
-      </Container>
       <Grid container spacing={2}>
         {posts.map((post, index) => (
           postTypeSwitch(post, index)
         ))}
-      </Grid>
+        </Grid>
+      </Container>
     </div>
   )
 }

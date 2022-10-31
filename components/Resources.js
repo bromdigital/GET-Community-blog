@@ -73,12 +73,6 @@ export default function DirectionStack() {
       <Container
         sx={headerBg}
         maxWidth={false}>
-      <Typography gutterBottom
-        variant="h7"
-        sx={resourcesStyle}
-        >
-        Dig deeper into $GET    
-      </Typography>
       </Container> 
       <Grid container
         sx={gridStyle}>
