@@ -62,6 +62,7 @@ export default function NativeSelectDemo() {
             <Button sx={{
               maxWidth: 250,
               marginTop: 2,
+              backgroundColor: "#7DA1A3"
             }} variant="contained" disableElevation>
             Visit Blog
             </Button>

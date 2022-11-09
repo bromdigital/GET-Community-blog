@@ -1,8 +1,7 @@
 import * as React from 'react';
 import {
   Button,
-  Grid,
-  Typography
+  Grid
 } from '@mui/material';
 import { Container } from '@mui/system';
 
@@ -51,12 +50,13 @@ export default function DirectionStack() {
   ];
   const btnStyle = {
     color: "white",
+    backgroundColor: "#7DA1A3",
     width: "100%",
   }
   const gridStyle = {
     textAlign: "center",
     backgroundColor: "#77B094",
-    padding: 1
+    padding: 0.4
   }
   const resourcesStyle = {
     backgroundColor: "#77B094",

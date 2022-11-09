@@ -31,7 +31,6 @@ export default function Home({ posts }) {
       <Head>
         <title>GET Community Blog & Resources</title>
       </Head>
-
       <BlogSelector />
       <Resources />
       <Container id="resources" maxWidth={false}>
