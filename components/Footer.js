@@ -16,7 +16,7 @@ export default function Header() {
           }}
         >
           <NextLink
-            href="https://discord.gg/RQCkh5Ve"
+            href="https://discord.gg/get-protocol-889431643494944768"
             passHref
           >
             <Button
