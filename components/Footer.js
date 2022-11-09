@@ -23,7 +23,9 @@ export default function Header() {
               color="secondary"
               component="a"
               fullWidth
-              sx={{ mt: 2 }}
+              sx={{
+                backgroundColor: "#637971",
+                mt: 2 }}
             variant="contained"
             >
               JOIN THE COMMUNITY ON DISCORD

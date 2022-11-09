@@ -17,7 +17,7 @@ export default function TwitterThread({ post }) {
     >
       <Card
         sx={{
-          backgroundColor: "#E94E1B",
+          backgroundColor: "#77B094",
           height: "100%"
         }}>
       <CardActionArea
