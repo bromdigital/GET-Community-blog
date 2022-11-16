@@ -2,12 +2,32 @@ import React from 'react'
 import Head from 'next/head'
 import { Container } from '@mui/system'
 import { useRouter } from 'next/router'
-import useRedirectToDiscord from '../../hooks/redirectDiscord';
+import { useEffect, useState } from 'react';
 
 const Invite = () => {
-  const router = useRouter()
-  const { code } = router.query
-  const { secondsRemaining } = useRedirectToDiscord(`https://discord.gg/get-protocol-${ code }`, 2);
+  const router = useRouter()  
+  const [discordCode, setDiscordCode] = useState(router.query.code);
+  const [secondsRemaining, setSecondsRemaining] = useState(5);
+  const [redirectTo, setRedirectTo] = useState(`https://discord.gg/get-protocol-${ discordCode }`);
+
+  useEffect(() => {
+    setDiscordCode(router.query.code)
+    setRedirectTo(`https://discord.gg/get-protocol-${ discordCode }`)
+
+    if (secondsRemaining === 0) {
+      router.push(redirectTo);
+      clearInterval(timer);
+    } 
+
+    const timer = setTimeout(() => {
+      setSecondsRemaining((prevSecondsRemaining) => prevSecondsRemaining - 1);
+      if (secondsRemaining === 1) router.push(redirectTo);
+    }, 1000);
+
+    return () => {
+      clearInterval(timer);
+    };
+  }, [router, secondsRemaining, redirectTo, discordCode]);
 
   return (
     <>

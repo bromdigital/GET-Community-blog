@@ -5,9 +5,11 @@
   "private": false,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
+    "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next export",
+    "lint-fix": "next lint --fix"
   },
   "dependencies": {
     "@emotion/react": "11.10.4",
