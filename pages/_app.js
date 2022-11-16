@@ -3,12 +3,13 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import '../styles/globals.css'
 import SEO from '../components/seo'
-import Container from '@mui/material/Container';
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <Header />
+      <Header>
+        <SEO />
+      </Header>
       <Component {...pageProps} />
       <Footer />
     </>
