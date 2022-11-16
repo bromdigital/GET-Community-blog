@@ -4,7 +4,7 @@ import { Container } from '@mui/system'
 import { useRouter } from 'next/router'
 import useRedirectToDiscord from '../../hooks/redirectDiscord';
 
-const Invite = () => {
+export default function Invite() {
   const router = useRouter()
   const { code } = router.query
   const { secondsRemaining } = useRedirectToDiscord(`https://discord.gg/get-protocol-${ code }`, 2);
@@ -34,5 +34,3 @@ const Invite = () => {
     </>
   )
 }
-
-export default Invite
