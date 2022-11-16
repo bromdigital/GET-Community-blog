@@ -10,7 +10,7 @@ const config = {
     site_name: 'GET Protocol Community',
     images: [
       {
-        url: 'https://get-community.com/og.jpg',
+        url: 'https://www.get-community.com/static/images/og.png',
         alt: 'GET Protocol Community',
       },
     ],

@@ -30,6 +30,17 @@ export default function Home({ posts }) {
     <div>
       <Head>
         <title>GET Community Blog & Resources</title>
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name='twitter:site' content='@bromdigital' />
+        <meta name="twitter:title" content="GET Protocol Community" />
+        <meta
+          name="twitter:description"
+          content="The NFT ticketing protocol's community page. Linking resources, blogs and useful links."
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.get-community.com/static/images/og.png"
+          />
       </Head>
       <BlogSelector />
       <Resources />
