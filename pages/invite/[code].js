@@ -42,7 +42,7 @@ const Invite = () => {
         />
         <meta
           name="twitter:image"
-          content="https://www.get-community.com/static/images/discordInvite.png"
+          content="https://miro.medium.com/max/1400/1*PBTkc1zZ6m3Aj4Sxb4c7Vg.gif"
           />
       </Head>
       <Container id="resources" maxWidth={false}>
