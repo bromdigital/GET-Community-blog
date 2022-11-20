@@ -40,7 +40,7 @@ export default function NativeSelectDemo() {
         minWidth: 120,
       marginTop: 2
       }}>
-        <h2>Official GET Protocol blogs</h2>
+        <h2>Official GET Protocol monthly blogs</h2>
       <FormControl fullWidth>
         <NativeSelect
           defaultValue={30}
