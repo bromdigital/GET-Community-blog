@@ -33,7 +33,7 @@ export default function DirectionStack() {
     },
     {
       href: 'https://dune.com/jackturnbull/GET-Protocol-Token-Dashboard',
-      title: 'Dune Analytics'
+      title: 'Dune - Jack'
     },
     {
       href: 'https://twitter.com/GET_comm_dash',
@@ -42,6 +42,10 @@ export default function DirectionStack() {
     {
       href: 'https://docs.get-protocol.io/',
       title: 'Dev Docs'
+    },
+    {
+      href: 'https://dune.com/Treaqura/get-protocol-olympus-pro',
+      title: 'Dune - Treaqura'
     },
     {
       href: 'https://dashboard.get-community.com/',
