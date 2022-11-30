@@ -9,6 +9,7 @@ import { Link } from '@mui/material';
 
 export default function NativeSelectDemo() {
   const [options, setOptions] = useState([
+    { value: 'https://medium.com/get-protocol/get-november-22-strength-in-numbers-a1063b8bc7fc', label: 'Nov ‘22' },
     { value: 'https://medium.com/get-protocol/get-october-22-its-all-about-alignment-2a2749e92d05', label: 'Oct ‘22' },
     { value: 'https://medium.com/get-protocol/get-september-22-lock-it-in-bde32896a5d4', label: 'Sep ’22' },
     { value: 'https://medium.com/get-protocol/get-august-22-the-impact-of-v2-7186a6e78304', label: 'Aug ’22' },
